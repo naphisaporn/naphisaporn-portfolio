@@ -19,8 +19,8 @@ export default function Navbar() {
           <Link href="/uxui">UX/UI</Link>
           <Link href="/review">Review</Link>
           <Link href="/ratecard">Rate Card</Link>
-          <Link href="/coding">Coding</Link>
-          <Link href="/affiliate">Affiliate</Link>
+          {/* <Link href="/coding">Coding</Link> */}
+          {/* <Link href="/affiliate">Affiliate</Link> */}
           <Link
             href="/contact"
             className="flex items-center gap-2 hover:text-blue-500 transition"
