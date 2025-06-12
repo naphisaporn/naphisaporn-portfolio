@@ -35,7 +35,7 @@ export default function Home() {
             ☰
           </button>
           <ul className="hidden md:flex gap-6 text-sm text-gray-700">
-            <li><a href="#portfolio" className="hover:text-indigo-600">Portfolio</a></li>
+            <li><a href="#about" className="hover:text-indigo-600">About</a></li>
             <li><a href="#uxui" className="hover:text-indigo-600">UX/UI</a></li>
             <li><a href="#skills" className="hover:text-indigo-600">Skills</a></li>
             <li><a href="#coding" className="hover:text-indigo-600">Coding</a></li>
@@ -46,7 +46,7 @@ export default function Home() {
         {menuOpen && (
           <div className="md:hidden px-6 pb-4">
             <ul className="flex flex-col gap-2 text-gray-700">
-              <li><a href="#portfolio" className="hover:text-indigo-600">Portfolio</a></li>
+              <li><a href="#about" className="hover:text-indigo-600">About</a></li>
               <li><a href="#uxui" className="hover:text-indigo-600">UX/UI</a></li>
               <li><a href="#skills" className="hover:text-indigo-600">Skills</a></li>
               <li><a href="#coding" className="hover:text-indigo-600">Coding</a></li>
@@ -64,13 +64,17 @@ export default function Home() {
           <p className="text-gray-600 text-lg">UX/UI Designer • Developer • Reviewer</p>
         </section>
 
-        {/* Portfolio Preview */}
-        <section id="portfolio">
+        {/* About Section */}
+        <section id="about">
           <h2 className="text-2xl font-semibold flex items-center gap-2 text-indigo-700">
-            <Briefcase size={20} /> Portfolio
+            <Briefcase size={20} /> About Me
           </h2>
-          <p className="text-gray-600">งานออกแบบและเว็บไซต์ที่เคยทำ</p>
-          <a href="/portfolio" className="text-indigo-500 hover:underline">ดูทั้งหมด</a>
+          <p className="text-gray-600">
+            I'm a passionate UX/UI designer and front-end developer who loves blending design and technology. 
+            With hands-on experience in research, analysis, and product reviews, I also have strong skills in visual editing, Canva, Power BI, and coding. 
+            I enjoy building intuitive, user-friendly interfaces and creating content that inspires.
+          </p>
+          <a href="/portfolio" className="text-indigo-500 hover:underline">View full portfolio</a>
         </section>
 
         {/* UX/UI */}
@@ -78,8 +82,8 @@ export default function Home() {
           <h2 className="text-2xl font-semibold flex items-center gap-2 text-indigo-700">
             <Palette size={20} /> UX/UI Design
           </h2>
-          <p className="text-gray-600">ตัวอย่างงานออกแบบจาก Figma</p>
-          <a href="/uxui" className="text-indigo-500 hover:underline">ดูเพิ่มเติม</a>
+          <p className="text-gray-600">Sample design projects from Figma</p>
+          <a href="/uxui" className="text-indigo-500 hover:underline">See more</a>
         </section>
 
         {/* Skills */}
@@ -87,7 +91,7 @@ export default function Home() {
           <h2 className="text-2xl font-semibold flex items-center gap-2 text-indigo-700">
             <Wrench size={20} /> Skills
           </h2>
-          <p className="text-gray-600 mb-4">ความสามารถที่ใช้ในการทำงาน</p>
+          <p className="text-gray-600 mb-4">Key skills used in my work</p>
           <ul className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm text-gray-700">
             <li className="bg-white shadow p-3 rounded">🎨 Figma / UX Research</li>
             <li className="bg-white shadow p-3 rounded">💻 HTML / CSS / Tailwind</li>
@@ -103,18 +107,18 @@ export default function Home() {
           <h2 className="text-2xl font-semibold flex items-center gap-2 text-indigo-700">
             <Code size={20} /> Coding
           </h2>
-          <p className="text-gray-600 mb-4">รวมโปรเจกต์ที่เขียนด้วย Next.js, React และอื่น ๆ</p>
+          <p className="text-gray-600 mb-4">Projects using Next.js, React, and more</p>
 
           <div ref={sliderRef} className="keen-slider">
             <div className="keen-slider__slide p-4 bg-white rounded shadow">
               <img src="/images/project1.png" alt="Project 1" className="rounded shadow mb-2" />
-              <h3 className="font-semibold text-indigo-600">Dashboard สำหรับบริษัท</h3>
-              <p className="text-sm text-gray-500 italic">* ไม่สามารถเผยแพร่ได้</p>
+              <h3 className="font-semibold text-indigo-600">Internal Company Dashboard</h3>
+              <p className="text-sm text-gray-500 italic">* Not for public release</p>
             </div>
             <div className="keen-slider__slide p-4 bg-white rounded shadow">
               <img src="/images/project2.png" alt="Project 2" className="rounded shadow mb-2" />
-              <h3 className="font-semibold text-indigo-600">ระบบลงทะเบียน Event</h3>
-              <p className="text-sm text-gray-500 italic">* โปรเจกต์ภายใน</p>
+              <h3 className="font-semibold text-indigo-600">Event Registration System</h3>
+              <p className="text-sm text-gray-500 italic">* Internal use only</p>
             </div>
           </div>
 
@@ -126,8 +130,8 @@ export default function Home() {
           <h2 className="text-2xl font-semibold flex items-center gap-2 text-indigo-700">
             <Star size={20} /> Review
           </h2>
-          <p className="text-gray-600">รีวิวสินค้าที่เคยทำ</p>
-          <a href="/review" className="text-indigo-500 hover:underline">ดูทั้งหมด</a>
+          <p className="text-gray-600">Product reviews I’ve created</p>
+          <a href="/review" className="text-indigo-500 hover:underline">See all</a>
         </section>
 
         {/* Contact */}
@@ -135,8 +139,8 @@ export default function Home() {
           <h2 className="text-2xl font-semibold flex items-center gap-2 text-indigo-700">
             <Mail size={20} /> Contact / Hire Me
           </h2>
-          <p className="text-gray-600">สนใจจ้างงาน / ติดต่อเพิ่มเติม</p>
-          <a href="/contact" className="text-indigo-500 hover:underline">ติดต่อฉัน</a>
+          <p className="text-gray-600">Interested in working together? Let’s connect!</p>
+          <a href="/contact" className="text-indigo-500 hover:underline">Get in touch</a>
         </section>
 
         {/* Footer */}
